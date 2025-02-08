@@ -7,7 +7,7 @@ This project is an **automated lighting system** based on **IoT technology**, de
 ## **📁 Project Structure**
 ```
 /Smart-Lighting-IoT
-│── /mkrwan                # LoRaWAN-based implementation (The Things Network)
+│── /ArduinoMkrWan         # LoRaWAN-based implementation (The Things Network)
 │   │── mkrwan.ino         # Firmware for LoRaWAN IoT device
 │   │── payloadformatterdownlink.txt # Downlink payload formatter for TTN
 │   │── mqtt.py            # MQTT-based communication script for TTN
