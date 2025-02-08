@@ -83,7 +83,7 @@ This project is an **automated lighting system** based on **IoT technology**, de
 #### **1.3 Run MQTT Broker**
 - Install **Paho MQTT**:
   ```
-  pip install paho-mqtt flask
+  pip install paho-mqtt
   ```
 - Run the **MQTT script**:
   ```
