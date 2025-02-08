@@ -48,7 +48,7 @@ This project is an **automated lighting system** based on **IoT technology**, de
 - **The Things Network (TTN)** account (for LoRaWAN setup)
 - **ThingSpeak** account (for WiFi-based cloud storage)
 - **Python 3** (for running the MQTT broker script)
-- **Flask** (for the web server)
+- **Live Server** (for the web server via VScode)
 - **Paho MQTT** (for handling MQTT messages)
 
 ---
@@ -118,7 +118,7 @@ The web interface allows users to:
 - **View real-time sensor data**.
 
 To use the interface:
-1. Start the **Flask server** (`mqtt.py` must be running).
+1. Start the **Live Server** (`mqtt.py` must be running).
 2. Open `index.html` in your browser.
 3. Click the buttons to send commands.
 
