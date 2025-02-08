@@ -12,11 +12,12 @@ This project is an **automated lighting system** based on **IoT technology**, de
 │   │── payloadformatterdownlink.txt # Downlink payload formatter for TTN
 │   │── mqtt.py            # MQTT-based communication script for TTN
 |   │── payloadformatterUplink.txt # uplink payload formatter for TTN
+|   │── index.html         # Web interface for remote control
 │
 │── /esp32                 # WiFi-based implementation (ThingSpeak)
 │   │── esp32.ino          # Firmware for ESP32 IoT device (WiFi communication)
-│   │── index.html         # Web interface for remote control
-│
+│   
+│── Report.pdf
 │── README.md              # Documentation and instructions
 ```
 
