@@ -1,0 +1,16 @@
+function decodeUplink(input) {
+    const payload = String.fromCharCode.apply(null, input.bytes);
+    const parts = payload.split(',');
+    const data = {};
+
+    parts.forEach(part => {
+        const [key, value] = part.split(':');
+        data[key] = parseInt(value, 10);
+    });
+
+    return {
+        data: data,
+        warnings: [],
+        errors: []
+    };
+}
