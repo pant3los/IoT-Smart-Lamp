@@ -1,0 +1,33 @@
+function encodeDownlink(input) {
+  var data = input.data;
+  var payloadObj = {};
+
+  if (data.mode) {
+    payloadObj.mode = data.mode;
+  }
+
+  if (data.mode === "rgb") {
+    var r = Math.min(255, Math.max(0, data.R || 0));
+    var g = Math.min(255, Math.max(0, data.G || 0));
+    var b = Math.min(255, Math.max(0, data.B || 0));
+    payloadObj.R = r;
+    payloadObj.G = g;
+    payloadObj.B = b;
+  }
+
+  // If detection mode, also include movement field if provided
+  if (data.mode === "detection") {
+    payloadObj.movement = data.movement || 0;
+  }
+
+  var payload = JSON.stringify(payloadObj);
+  var bytes = [];
+  for (var i = 0; i < payload.length; i++) {
+    bytes.push(payload.charCodeAt(i));
+  }
+
+  return {
+    bytes: bytes,
+    fPort: 1
+  };
+}
